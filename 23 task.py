@@ -5,9 +5,11 @@ n = random.randint(-10,10)
 print(f'n = {n}')
 
 def TableOfQuarters(n):
+    table = []
     if n<0:
         n = -n
-    for i in range(n):
-        print(f'{i}^2 = {i**2}')
+    for i in range(n+1):
+        table.append(i**2)
+    return table
 
-TableOfQuarters(n)
+print(TableOfQuarters(n))
