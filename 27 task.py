@@ -4,7 +4,6 @@ a = input('Введите число: ')
 
 
 def Quantity (a):
-    b = len(a)
-    return b
+    return len(a)
 
 print(f'В {a} {Quantity(a)} цифр')
