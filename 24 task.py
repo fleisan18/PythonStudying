@@ -1,20 +1,15 @@
-#26. Возведите число А в натуральную степень B используя цикл
-
+#4. Найти кубы чисел от 1 до N
 import random
 
-basis = random.randint(-10,10)
-degree = random.randint(0,10)
-print(f'a = {basis}, degree = {degree}')
+n = random.randint(-10,10)
+print(f'n = {n}')
 
-def NatDegree(a,b):
-    result = [a]
-    a1 = a
-    if b == 0:
-            result = [1]
-    else:
-        for i in range(b-1):
-            a = a1*a
-            result.append(a)
-    return result
+def TableOfCubes(n):
+    table = []
+    if n<0:
+        n = -n
+    for i in range(n+1):
+        table.append(i**3)
+    return table
 
-print(NatDegree(basis, degree))
+print(TableOfCubes(n))
