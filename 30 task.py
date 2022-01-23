@@ -2,10 +2,10 @@
 from random import random
 import random
 
-list = []
 
-def Filling(list):
-    for i in range(6):
+def Filling():
+    list = []
+    for i in range(random.randint(1,10)):
         list.append(random.randint(-10,10))
     return list
 
@@ -13,9 +13,10 @@ def Cube (list):
     results = []
     for i in list:
         if i % 2 == 0:
-            results.append(f'{i} = {i**3}')
+            results.append(f'{i}^3 = {i**3}')
     return results
 
 
-print(Filling(list))
-print(Cube(list))
+filled_list = Filling()
+print(filled_list)
+print(Cube(filled_list))
