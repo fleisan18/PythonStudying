@@ -2,7 +2,6 @@
 
 import random
 
-
 def Filling(length):
     list = []
     for i in range(length):

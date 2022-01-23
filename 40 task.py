@@ -4,7 +4,7 @@ import random
 def Filling(length):
     list = []
     for i in range(length):
-        list.append(random.randint(-100,100))
+        list.append(random.uniform(-100,100))
     return list
 
 def FindMax (list):
@@ -21,6 +21,14 @@ def FindMin (list):
             min= i
     return min
 
+
 filled_list = Filling(12)
 print(filled_list)
+
+min_value = min(filled_list)
+print(f'min = {min_value}')
+
+max_value = max(filled_list)
+print(f'max = {max_value}')
+
 print(f'{FindMax(filled_list)} - {FindMin(filled_list)} = {FindMax(filled_list)-FindMin(filled_list)}')
