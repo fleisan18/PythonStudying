@@ -22,5 +22,6 @@ def NumberOccurrences (first_line, second_line):
 
 print(NumberOccurrences(first_line, second_line))
 
-
+#3
+print(f'Кол-во вхождений: {first_line.count(second_line)}')
 
