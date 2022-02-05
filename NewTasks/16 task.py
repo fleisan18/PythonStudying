@@ -15,6 +15,8 @@ def Filling(n):
         list.append(random.randint(-n,n))
     return list
 
+def Filling2 (n):
+    return [random.randint(-n, n) for i in range(n)]
 
 def Set(file):
     data = open(file, 'r')
@@ -33,7 +35,8 @@ def Multiplication(indexes, list):
     return result
 
 
-test_list = Filling(10)
+# test_list = Filling(10)
+test_list = Filling2(10)
 print(test_list)
 
 indexes = Set('test.txt')
