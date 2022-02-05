@@ -7,16 +7,16 @@ def SummOfFloatNumber (n):
         count+=int(n[i])
     return count
     
-def isfloat(s):
+def IsFloat(s):
   try:
     float(s)
     return SummOfFloatNumber(s)
   except ValueError:
-    return "Вы ввели неправильное число"
+    return None
 
 
 test_number = input('Введите вещественное число: ')
-print(isfloat(test_number))
+print(IsFloat(test_number))
 
 
         
