@@ -3,7 +3,7 @@
 # Позиции хранятся в файле file.txt в одной строке одно число
 import random
 
-data = open('test.txt', 'w')
+data = open('17 task.txt', 'w')
 data.writelines('2 \n')
 data.writelines('3 \n')
 data.writelines('5 \n')
